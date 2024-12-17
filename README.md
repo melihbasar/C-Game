@@ -26,3 +26,4 @@ In this game, you explore various rooms filled with creatures, items, and traps.
 - When you enter a room, you can choose to interact with its contents using commands like `look`, `attack`, or `pickup`.
 - Certain rooms have traps that deal damage to the player upon entry.
 - Creatures in the room can attack the player when looked at or attacked.
+- Creatures will drop the items after being defeated.

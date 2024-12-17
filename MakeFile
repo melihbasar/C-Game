@@ -1,0 +1,31 @@
+# Compiler and flags
+CC = gcc
+CFLAGS = -Wall -std=c99
+
+# The target executable
+TARGET = game
+
+# Source files
+SRCS = main.c game.c
+
+# Object files (compiled from source files)
+OBJS = $(SRCS:.c=.o)
+
+# Default target to compile the game
+all: $(TARGET)
+
+# Compile the game executable from object files
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+
+# Rule to compile the .c files to .o files
+%.o: %.c game.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up compiled files
+clean:
+	rm -f $(TARGET) $(OBJS)
+
+# Optional: a target to run the game after compiling
+run: $(TARGET)
+	./$(TARGET)

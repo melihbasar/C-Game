@@ -16,9 +16,9 @@ In this game, you explore various rooms filled with creatures, items, and traps.
 
 ## Code Structure
 
-- **game.h**: Contains declarations for all the game structures (Player, Room, Creature) and function prototypes.
-- **game.c**: Implements the game logic, including room setup, player actions, and gameplay loop.
-- **main.c**: Contains the entry point of the program that initializes the game and starts the loop.
+- **StuckInTheDark.h**: Contains declarations for all the game structures (Player, Room, Creature) and function prototypes.
+- **StuckInTheDark.c**: Implements the game logic, including room setup, player actions, and gameplay loop.
+- **StuckInTheDark.c**: Contains the entry point of the program that initializes the game and starts the loop.
 
 ## Game Logic
 
